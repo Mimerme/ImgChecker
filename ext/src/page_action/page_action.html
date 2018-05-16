@@ -1,0 +1,56 @@
+<!doctype html>
+<style type="text/css">
+	#mainPopup {
+		padding: 10px;
+		height: 200px;
+		width: 400px;
+		font-family: Helvetica, Ubuntu, Arial, sans-serif;
+	}
+	h1 {
+		font-size: 2em;
+	}
+
+	table {
+	    border-collapse: collapse;
+	    border-spacing: 0;
+	    width: 100%;
+	    border: 1px solid #ddd;
+	}
+
+	th, td {
+	    text-align: left;
+	    padding: 8px;
+	}
+ 	
+ 	footer {
+            width: 100%;
+            bottom: 0;
+            position: fixed;
+        }
+
+	tr:nth-child(even){background-color: #f2f2f2}
+
+</style>
+<script src="./page_action.js"></script>
+
+<div id="mainPopup">
+	<center>
+		<h1>ImgChecker</h1>
+		<button id="toggle" style="margin-bottom: 10px;">Pick Image</button>
+	</center>
+
+
+<div style="overflow-y: auto; max-height: 100%; margin-bottom: 20px;">
+  <table style="width: 100%;">
+  	<tr>
+      <th>src</th>
+      <th>image</th>
+      <th>size</th>
+  	</tr>
+  </table>
+</div>
+<footer id="status" style="margin: 2px;">
+	Waiting for user input... 
+</footer>
+
+</div>

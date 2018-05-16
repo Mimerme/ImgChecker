@@ -1,0 +1,40 @@
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: block; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255,0,0,0.5); /* Black background with opacity */
+    z-index: 2147483648; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+.mimerme-hover-overlay-selected{
+    background-color: rgba(0,0,255,0.5) !important;
+    outline: thick solid #0000FF !important;
+}
+
+.mimerme-hover-overlay {
+    position: absolute;
+    display: block;
+    background-color: rgba(255,0,0,0.5);
+    outline: thick solid #ff0000;
+    z-index: 2147483648;
+    cursor: pointer;
+}
+
+.selected-mimerme {
+    outline: thick solid #0000FF;
+}
+
+.hover-selected-mimerme {
+    outline: thick solid #ff0000;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
